@@ -6,20 +6,25 @@ import matplotlib as plt
 
 
 #importing data
-2021_standings = pd.read_csv("/Users/geoffrey/Desktop/mlbdata_standings_2021")
-2020_standings = pd.read_csv("/Users/geoffrey/Desktop/mlbdata_standings_2020")
-2021_payroll = pd.read_csv("/Users/geoffrey/Desktop/mlbdata_payroll_2021")
-2020_payroll = pd.read_csv("/Users/geoffrey/Desktop/mlbdata_payroll_2020")
+standings2021 = pd.read_csv("/Users/geoffrey/Desktop/mlbdata_standings_2021.csv")
+standings2020 = pd.read_csv("/Users/geoffrey/Desktop/mlbdata_standings_2020.csv")
+payroll2021 = pd.read_csv("/Users/geoffrey/Desktop/mlbdata_payroll_2021.csv")
+payroll2020 = pd.read_csv("/Users/geoffrey/Desktop/mlbdata_payroll_2020.csv")
+
+
 
 #creating lists
-2021_standings.values.tolist()
-2021_standings.values.tolist()
-2021_payroll.values.tolist()
-2020_payroll.values.tolist()
+standings2021.values.tolist()
+standings2020.values.tolist()
+payroll2021.values.tolist()
+payroll2020.values.tolist()
 
 #creating dataframes
-2021_standings_df = pd.DataFrame(2021_standings)
-2020_standings_df = pd.DataFrame(2020_standings)
-2021_payroll_df = pd.DataFrame(2021_payroll)
-2020_payroll_df = pd.DataFrame(2020_payroll)
+standings2021df = pd.DataFrame(standings2021)
+standings2020df = pd.DataFrame(standings2020)
+payroll2021df = pd.DataFrame(payroll2021)
+payroll2020df = pd.DataFrame(payroll2020)
 
+
+df2021 = pd.merge(standings2021df, payroll2021df, on='Team', how='outer')
+display(df2021)
