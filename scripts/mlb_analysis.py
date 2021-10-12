@@ -2,7 +2,7 @@
 
 import pandas as pd
 import numpy as np
-import matplotlib as plt
+import matplotlib.pyplot as plt
 
 
 #importing data
@@ -25,6 +25,11 @@ standings2020df = pd.DataFrame(standings2020)
 payroll2021df = pd.DataFrame(payroll2021)
 payroll2020df = pd.DataFrame(payroll2020)
 
-
+#merge dataframes?
 df2021 = pd.merge(standings2021df, payroll2021df, on='Team', how='outer')
 display(df2021)
+
+#visualizations
+x = payroll2021['Win Percentage']
+y = payroll2021['2021 Total Payroll']
+plt.scatter(x,y)
