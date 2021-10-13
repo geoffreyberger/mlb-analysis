@@ -32,4 +32,21 @@ display(df2021)
 #visualizations
 x = payroll2021['Win Percentage']
 y = payroll2021['2021 Total Payroll']
+y = y[::-1]
+x = x[::-1]
+
 plt.scatter(x,y)
+
+plt.xlabel("Win Percentage")
+plt.ylabel("Total Payroll")
+plt.title("2021")
+
+plt.show()
+
+
+
+
+
+
+
+
