@@ -7,22 +7,23 @@ import matplotlib.pyplot as plt
 
 #importing data
 standings2021 = pd.read_csv("/Users/geoffrey/Desktop/mlbdata_standings_2021.csv")
-standings2020 = pd.read_csv("/Users/geoffrey/Desktop/mlbdata_standings_2020.csv")
 payroll2021 = pd.read_csv("/Users/geoffrey/Desktop/mlbdata_payroll_2021.csv")
+standings2020 = pd.read_csv("/Users/geoffrey/Desktop/mlbdata_standings_2020.csv")
 payroll2020 = pd.read_csv("/Users/geoffrey/Desktop/mlbdata_payroll_2020.csv")
 
 
 
 #creating lists
 standings2021.values.tolist()
-standings2020.values.tolist()
 payroll2021.values.tolist()
+
+standings2020.values.tolist()
 payroll2020.values.tolist()
 
 #creating dataframes
 standings2021df = pd.DataFrame(standings2021)
-standings2020df = pd.DataFrame(standings2020)
 payroll2021df = pd.DataFrame(payroll2021)
+standings2020df = pd.DataFrame(standings2020)
 payroll2020df = pd.DataFrame(payroll2020)
 
 #merge dataframes?
@@ -35,13 +36,15 @@ y = payroll2021['2021 Total Payroll']
 y = y[::-1]
 x = x[::-1]
 
+#scatter2021
 plt.scatter(x,y)
-
 plt.xlabel("Win Percentage")
 plt.ylabel("Total Payroll")
 plt.title("2021")
-
 plt.show()
+
+#trendline
+z = np.polyfit(x, y, 1)
 
 
 
