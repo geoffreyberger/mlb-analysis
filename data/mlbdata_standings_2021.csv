@@ -1,0 +1,31 @@
+﻿Team,League,Division,Wins,Losses,Winning %,GB
+Tampa Bay Rays,American,AL East,100,62,0.617,0
+Boston Red Sox,American,AL East,92,70,0.568,8
+New York Yankees,American,AL East,92,70,0.568,8
+Toronto Blue Jays,American,AL East,91,71,0.562,9
+Baltimore Orioles,American,AL East,52,110,0.321,48
+Chicago White Sox,American,AL Central,93,69,0.574,0
+Cleveland Indians,American,AL Central,80,82,0.494,13
+Detroit Tigers,American,AL Central,77,85,0.475,16
+Kansas City Royals,American,AL Central,74,88,0.457,19
+Minnesota Twins,American,AL Central,73,89,0.451,20
+Houston Astros,American,AL West,95,67,0.586,0
+Seattle Mariners,American,AL West,90,72,0.556,5
+Oakland Athletics,American,AL West,86,76,0.531,9
+Los Angeles Angels,American,AL West,77,85,0.475,18
+Texas Rangers,American,AL West,60,102,0.37,35
+Atlanta Braves,National,NL East,88,73,0.547,0
+Philadelphia Phillies,National,NL East,82,80,0.506,6.5
+New York Mets,National,NL East,77,85,0.475,11.5
+Miami Marlins,National,NL East,67,95,0.414,21.5
+Washington Nationals,National,NL East,65,97,0.401,23.5
+Milwaukee Brewers,National,NL Central,95,67,0.586,0
+St. Louis Cardinals,National,NL Central,90,72,0.556,5
+Cincinnati Reds,National,NL Central,83,79,0.512,12
+Chicago Cubs,National,NL Central,71,91,0.438,24
+Pittsburgh Pirates,National,NL Central,61,101,0.377,34
+San Francisco Giants,National,NL West,107,55,0.66,0
+Los Angeles Dodgers,National,NL West,106,56,0.654,1
+San Diego Padres,National,NL West,79,83,0.488,28
+Colorado Rockies,National,NL West,74,87,0.46,32.5
+Arizona Diamondbacks,National,NL West,52,110,0.321,55
